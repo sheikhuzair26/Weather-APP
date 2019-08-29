@@ -6,7 +6,8 @@
 
 ##Axios
 Performing a `GET` request
-```js
+
+js
 const axios = require('axios');
 
 ##Features
