@@ -2,24 +2,22 @@
 
 - Forecast Current Weather 
 
-##API (APPLICATION PROGRAMMING INTERFACE)
+#API (APPLICATION PROGRAMMING INTERFACE)
 
-##Axios
+#Axios
 Performing a `GET` request
 
-js
+js: 
 const axios = require('axios');
 
-##Features
+#Features
 
 - Intercept request and response
 - Transform request and response data
 - Automatic transforms for JSON data
 
-##Using cdn:
-
-```html
+#Using cdn:
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-```
+
 
 
