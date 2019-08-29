@@ -1,0 +1,180 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-image: url('https://media.giphy.com/media/KltHRyySj6Hvi/giphy.gif'); */
+    background-image: url("https://media.giphy.com/media/CIYF0RVOmd2qQ/giphy.gif");
+    height: 180vh;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* font-family: 'Abel', sans-serif; */
+}
+
+.main-heading {
+    color: white;
+    font-size: 3em;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#search-btn {
+    color: white;
+    height: 46px;
+    width: 4em;
+    background-color: black;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.inputBar {
+    width: 32em;
+    height: 38px;
+    border: none;
+    text-transform: initial;
+    color: black;
+    padding: 4px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.city {
+    font-size: 95px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 3px 3px white;
+}
+
+.degree {
+    font-size: 5em;
+    font-weight: normal;
+    margin: 18px 18px 0px 18px;
+    color: white;
+}
+
+.weatherMood {
+    font-size: 2em;
+    letter-spacing: 6px;
+    font-weight: bold;
+    color: black;
+    margin: 0px 0px 11px 0px;
+}
+
+.humidity {
+    font-size: 18px;
+    padding: 5px;
+    font-weight: bold;
+    margin-bottom: 3em;
+}
+
+.icon {
+    font-size: 10em;
+    font-weight: bold;
+    margin-top: -95px;
+}
+
+.gif {}
+
+#popUpControls {
+    display: none;
+}
+
+#popUp {
+    display: flex;
+    text-align: center;
+    margin-top: 5em;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.rightContainer {}
+
+#leftControls {
+    padding-top: 5em;
+    text-align: center;
+}
+
+.countyInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 120px 40px;
+    color: white;
+}
+
+.country {
+    font-size: 60px;
+}
+
+p {
+    text-transform: uppercase;
+    font-size: x-large;
+}
+
+.description {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+@media screen and (max-width:560px) {
+    .controls {
+        width: 21em;
+    }
+    .degree {
+        font-size: 6em;
+        margin: -32px 18px 0px 18px;
+    }
+    .weatherMood {
+        font-size: 1em;
+    }
+    .countyInfo {
+        padding: 1px 40px;
+    }
+    #popUp {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .city {
+        font-size: 90px;
+    }
+    .countyInfo {
+        padding: 1px 40px;
+    }
+    .degree {
+        padding-top: 10px;
+    }
+    .icon {
+        margin: -95px 0px 20px 0px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .controls {
+        width: 18em;
+    }
+    .icon {
+        margin: -95px 0px 40px 0px;
+    }
+    .city {
+        font-size: 60px;
+    }
+    .degree {
+        font-size: 6em;
+        margin: -55px 18px 0px 18px;
+    }
+}
