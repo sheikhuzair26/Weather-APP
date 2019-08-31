@@ -96,9 +96,13 @@ body {
     margin-top: 5em;
     flex-direction: row;
     align-items: baseline;
+    background-color: transparent;
+    box-shadow: 1px 2px 6px;
 }
 
-.rightContainer {}
+.rightContainer {
+    margin-left: 55px;
+}
 
 #leftControls {
     padding-top: 5em;
@@ -108,7 +112,7 @@ body {
 .countyInfo {
     display: flex;
     flex-direction: column;
-    padding: 120px 40px;
+    /* padding: 120px 40px; */
     color: white;
 }
 
@@ -128,7 +132,7 @@ p {
     font-weight: bold;
 }
 
-@media screen and (max-width:560px) {
+@media screen and (max-width:660px) {
     .controls {
         width: 21em;
     }
@@ -139,8 +143,11 @@ p {
     .weatherMood {
         font-size: 1em;
     }
-    .countyInfo {
+    /* .countyInfo {
         padding: 1px 40px;
+    } */
+    .rightContainer {
+        margin-left: 0px;
     }
     #popUp {
         flex-direction: column;
@@ -148,12 +155,15 @@ p {
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:450px) {
     .city {
-        font-size: 90px;
+        font-size: 60px;
     }
     .countyInfo {
-        padding: 1px 40px;
+        /* padding: 1px 40px; */
+    }
+    .rightContainer {
+        margin-left: 0px;
     }
     .degree {
         padding-top: 10px;
@@ -170,8 +180,11 @@ p {
     .icon {
         margin: -95px 0px 40px 0px;
     }
+    .rightContainer {
+        margin-left: 0px;
+    }
     .city {
-        font-size: 60px;
+        font-size: 55px;
     }
     .degree {
         font-size: 6em;
